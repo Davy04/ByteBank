@@ -18,5 +18,13 @@ Console.WriteLine("Saldo da conta da maria = " + contaDaMaria.saldo);
 
 contaDoAndre.transferir(50, contaDaMaria);
 
-Console.WriteLine("saldo do andré = "+ contaDoAndre.saldo);
-Console.WriteLine("saldo da maria = "+ contaDaMaria.saldo);
+Console.WriteLine("saldo do andré = " + contaDoAndre.saldo);
+Console.WriteLine("saldo da maria = " + contaDaMaria.saldo);
+
+ContaCorrente contaDoPedro = new ContaCorrente();
+contaDoPedro.titular = "Pedro Silva";
+contaDoPedro.numero_agencia = 17;
+contaDoPedro.conta = "1010-5";
+contaDoPedro.saldo = 350;
+
+

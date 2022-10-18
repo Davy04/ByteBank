@@ -10,8 +10,9 @@ namespace bytebank
     {
         public int numero_agencia;
         public string conta;
+        public double saldo = 100;
+
         public string titular;
-        public double saldo;
 
         public void depositar(double valor)
         {
@@ -43,6 +44,14 @@ namespace bytebank
                 destino.depositar(valor);
                 return true;
             }
+        }
+
+        public void mostrar()
+        {
+            Console.WriteLine("titular: "+ titular);
+            Console.WriteLine("conta: "+ conta);
+            Console.WriteLine("número agencia: "+ numero_agencia);
+            Console.WriteLine("saldo: "+ saldo);
         }
     }
 }
