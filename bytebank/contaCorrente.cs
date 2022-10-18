@@ -39,8 +39,8 @@ namespace bytebank
             }
             else
             {
-                this.saldo -= valor;
-                destino.saldo += valor;
+                this.sacar(valor);
+                destino.depositar(valor);
                 return true;
             }
         }
