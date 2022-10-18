@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace bytebank
+namespace bytebank.titular
 {
     public class Cliente
     {
