@@ -65,10 +65,14 @@ using bytebank.titular;
 //Console.WriteLine(conta3.Numero_agencia);
 //Console.WriteLine(conta3.Conta);
 
-ContaCorrente conta4 = new ContaCorrente();
-conta4.SetSaldo(500);
-conta4.Numero_agencia = 18;
-conta4.Titular = new Cliente();
+//ContaCorrente conta4 = new ContaCorrente(18, "1010-x");
+//conta4.SetSaldo(500);
+//conta4.Titular = new Cliente();
+//Console.WriteLine(conta4.GetSaldo());
+//Console.WriteLine(conta4.Numero_agencia);
 
-Console.WriteLine(conta4.GetSaldo());
-Console.WriteLine(conta4.Numero_agencia);
+ContaCorrente conta5 = new ContaCorrente(283, "1234-x");
+Console.WriteLine(ContaCorrente.totalDeContas);
+
+ContaCorrente conta6 = new ContaCorrente(284, "9874-z");
+Console.WriteLine(ContaCorrente.totalDeContas);
